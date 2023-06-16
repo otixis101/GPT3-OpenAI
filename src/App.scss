@@ -1,0 +1,134 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+// linear-gradient(
+//             180deg,
+//             rgba(20, 20, 32, 0.65) 0%,
+//             #141420 100%
+//           )
+
+body{
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+    font-size: 16px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+   
+  li{
+    list-style: none;
+  }
+}
+
+
+button.btn__cta{
+  background-color: unset;
+  color: inherit;
+  font-family: var(--font-family);
+  font-weight: 500;
+  border-radius: .2em;
+  padding: .7rem 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.gradient__bg{
+    background: radial-gradient(circle at 3% 25%,rgba(0, 40, 83, 1)0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient__text{
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.section__padding{
+    padding: 3vw 6vw;
+}
+.section__margin{
+    margin: 3vw 6vw;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  .slide-up{
+    animation:  slide-up 250ms ease-in-out both;
+  }
+
+  @keyframes slide-up {
+      0%{
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      50%{
+        opacity: .8;
+      }
+      100%{
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    .section__padding{
+        padding: 8vw;
+    }
+
+    .section__margin{
+        margin: 8vw;
+    }
+
+
+  }
+
+  @media screen and (max-width: 550px) {
+    
+    .section__padding{
+        padding: 6vw;
+    }
+
+    .section__margin{
+        margin: 6vw;
+    }
+
+
+  }
+  
